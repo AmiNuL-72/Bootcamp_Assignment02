@@ -142,42 +142,37 @@
                 <h1>Most Popular Items</h1>
             </div>
             <div class="product-section">
-                <div class="product-grid">
+                <div class="product-grid" id="products_id">
                     <div class="product-card">
                         <img src="Images/gyro-sandwich.png" alt="Gyro Sandwich">
                         <h3>Gyro Sandwich</h3>
                         <p>$15.00</p>
                         <button>Add To Cart</button>
                     </div>
-            
                     <div class="product-card">
                         <img src="Images/enchilada.png" alt="Enchilada">
                         <h3>Enchilada</h3>
                         <p>$25.50</p>
                         <button>Add To Cart</button>
                     </div>
-            
                     <div class="product-card">
                         <img src="Images/green-beans.png" alt="Green Beans">
                         <h3>Green Beans</h3>
                         <p>$12.00</p>
                         <button>Add To Cart</button>
                     </div>
-            
                     <div class="product-card">
                         <img src="Images/pizza-with-mushroom.png" alt="Pizza">
                         <h3>Pizza</h3>
                         <p>$18.50</p>
                         <button>Add To Cart</button>
                     </div>
-            
                     <div class="product-card">
                         <img src="Images/Chicken-Pot-Pie.png" alt="Chicken Pot Pie">
                         <h3>Chicken Pot Pie</h3>
                         <p>$25.00</p>
                         <button>Add To Cart</button>
                     </div>
-            
                     <div class="product-card">
                         <img src="Images/green-salad.png" alt="Green Salad">
                         <h3>Green Salad</h3>
@@ -187,9 +182,10 @@
                 </div>
             
                 <div class="see-more">
-                    <button>See More Products</button>
+                    <button onclick="toggleProducts()">See More Products</button>
                 </div>
             </div>
+            
             
         </section>
         <section class="Services_section">
@@ -255,11 +251,13 @@
                 <div class="desc_part">
                     <h1>Subscribe To Our Newsletter</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipidrscing elit. <br> Purus mauris sem sed urna venenatis vivamus. Egestas in <br>velit nulla viverra turpis id ac. Amet faucibus tempus. <br></p>
-                    <div class="inxput">
-                        <input id="inxp" type="email" placeholder="Type your email...">
-                        <button id="inxb">Subscribe</button>
-                    </div>
-                    <div id="subscribe_message" style="padding-top: 10px; font-weight: bold;"></div>                    
+                    
+                    <form class="inxput" onsubmit="Subscribe_handler(event)">
+                        <input id="inxp" type="email" name="mail" placeholder="Type your email...">
+                        <button type="submit" id="inxb">Subscribe</button>
+                    </form>
+                    
+                    <div id="subscribe_message" style="padding-top: 10px; font-weight: bold;"></div>
                     
                 </div>
             </div>
