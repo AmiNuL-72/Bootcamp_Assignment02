@@ -328,8 +328,15 @@ body {
 }
 .testimonial_container{
     display: flex;
+    justify-content: space-between;
     gap: 30px;
     padding-top: 20px;
+}
+.tcxright img{
+    width: 70%;
+}
+.tcxright{
+    text-align: center;
 }
 .tcxleft{
     width: 50%;
@@ -429,4 +436,171 @@ body {
     color: white;
     text-transform: uppercase;
     border: none;
+}
+
+
+
+/* Tablet Devices */
+@media (max-width: 1024px) {
+    .Header_section {
+        margin: 0 50px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-cart {
+        width: 120px;
+    }
+    
+    .search_box {
+        width: 300px;
+    }
+
+    .Banner_section {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    
+    .banner_left_part, .banner_right_part {
+        width: 100%;
+    }
+    
+    .hero-text h1 {
+        font-size: 64px;
+    }
+    
+    .featured-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .info-section{
+        flex-direction: column;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product-card {
+        padding: 10px;
+    }
+
+    .Services_section {
+        margin: 80px 50px;
+    }
+
+    .services_card {
+        width: 100%;
+        height: auto;
+    }
+
+    .Testimonial_section {
+        margin: 80px 50px;
+    }
+    .testimonial_container{
+        flex-direction: column;
+    }
+    .tcxleft{
+        width: 95%;
+    }
+    .tcxright img{
+        width: 70%;
+    }
+    .Subscribe_section {
+        margin: 80px 50px;
+    }
+    .subscribe_container{
+        flex-direction: column;
+    }
+    .subscribe_message{
+        width: 100%;
+    }
+    #inxb{
+        width: 100%;
+    }
+    .img_part img{
+        width: 100%;
+    }
+    
+    .Footer_Section {
+        padding: 40px 50px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .Header_section {
+        margin: 0 20px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-cart {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .search_box {
+        width: 100%;
+    }
+
+    .Banner_section {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .banner_left_part, .banner_right_part {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .featured-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        width: 100%;
+    }
+
+    .product-card {
+        padding: 8px;
+    }
+
+    .Services_section {
+        margin: 60px 20px;
+    }
+    .services_container{
+        flex-direction: column;
+    }
+    .services_card {
+        width: 100%;
+        height: auto;
+    }
+
+    .Testimonial_section {
+        margin: 60px 20px;
+    }
+
+    .Subscribe_section {
+        margin: 60px 20px;
+    }
+    #inxb{
+        width: 100%;
+    }
+    .Footer_Section {
+        padding: 30px 20px;
+    }
+    
+    .footer_container {
+        flex-direction: column;
+    }
 }
